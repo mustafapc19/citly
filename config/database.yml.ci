@@ -6,9 +6,9 @@ default: &default
 
 development:
   <<: *default
-  database: wheel_development
+  database: Citly_development
 
 test:
   <<: *default
   user: postgres
-  database: wheel_test<%= ENV['CIRCLE_NODE_INDEX'] %>
+  database: Citly_test<%= ENV['CIRCLE_NODE_INDEX'] %>
